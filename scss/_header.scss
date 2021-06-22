@@ -1,0 +1,61 @@
+@import 'variables';
+
+#header.sticky {
+  position: fixed;
+  width: 100%;
+  background-color: azure;
+  padding: 15px 0;
+  z-index: 100;
+  transition: all 0.5s;
+  box-shadow: 4px 8px 12px azure;
+}
+
+.header-container { 
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+  padding-top: 30px;
+  
+
+  .header-logo {
+    text-decoration: none;
+    font-size: 5rem;
+    font-family: 'Miss Fajardose', cursive;
+    color: $turbo;
+    letter-spacing: 6px;
+    cursor: pointer;
+    transition: all 0.5s;
+
+    &:hover {
+      text-shadow: 6px 10px 14px gold;
+      transform: scale(1.02);
+    }
+  }
+
+  .header-navigation ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    li {
+     list-style: none;
+     margin-left: 20px;
+     
+     a {
+       text-decoration: none;
+       font-size: 1.6rem;
+       color: $turbo;
+       cursor: pointer;
+      transition: all 0.5s;
+     }
+
+     a:hover {
+      //  color: $turbo;
+       border-bottom: 1px solid $turbo;
+     }
+    }
+  }
+}

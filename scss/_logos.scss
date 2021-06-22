@@ -1,0 +1,32 @@
+.logos {
+  background: $white;
+
+  .logos-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 50px 0;
+
+    .logos-images {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      align-items: center;
+      justify-content: center;
+      grid-gap: 20px;
+
+      img {
+        width: 200px;
+        height: 150px;
+        cursor: pointer;
+        border-top-right-radius: 15px;
+        border-bottom-left-radius: 15px;
+        box-shadow: 15px 20px 25px $alice-blue;
+        transition: all 0.5s;
+      }
+
+      img:hover {
+        transform: translateY(-10px);
+        border: none;
+      }
+    }
+  }
+}

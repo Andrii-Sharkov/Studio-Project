@@ -1,0 +1,68 @@
+.services {
+  background: $white;
+
+  .services-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 50px 0;
+
+    .title-service {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      h2 {
+        font-size: $title-size;
+        margin-bottom: 20px;
+      }
+
+      p {
+        font-size: 1.3rem;
+        font-family: cursive;
+      }
+    }
+
+    .services-offer {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 15px;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      margin-top: 40px;
+
+      .service .fas {
+        color: $white;
+        background: $turbo;
+        padding: 25px;
+        margin-bottom: 25px;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: all 0.5s;
+
+      }
+
+      .service .fa-shopping-cart:hover,
+      .service .fa-laptop:hover,
+      .service .fa-lock:hover {
+        background-color: black;
+        color: $turbo
+      }
+      // .service .fas .fa-shopping-cart:hover {
+      //   transform: scale(1.5);
+      // }
+
+      .service h3 {       
+          font-size: 2rem;
+          margin-bottom: 15px;       
+      }
+
+      .service p {        
+          text-align: center;
+          line-height: 1.2;
+          font-size: 1.3rem;        
+      }
+    }
+  }
+}
